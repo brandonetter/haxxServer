@@ -25,3 +25,7 @@ haxxServer runs with a markdown to HTML interpreter, any route leading to a **_*
 
 ![image](https://user-images.githubusercontent.com/4108484/113361421-f2172280-9319-11eb-876f-e675ca91abac.png)
 
+## PHP
+If PHP is installed, server will run **_*.php_** through PHP CLI, but this is NOT a PHP server. 
+
+![image](https://user-images.githubusercontent.com/4108484/113361896-07d91780-931b-11eb-9c3c-b7e97e40335b.png)
