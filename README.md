@@ -31,6 +31,5 @@ If PHP is installed, server will run **_*.php_** through PHP CLI, but this is NO
 ![image](https://user-images.githubusercontent.com/4108484/113361896-07d91780-931b-11eb-9c3c-b7e97e40335b.png)
 
 This file is interpreted and then stored in a /tmp/ Directory, but there is no persistence or access to $_GET, $_POST, $_SESSION, etc..
-https://github.com/brandonetter/haxxServer/blob/master/tmp/html_test.php34
 
 https://github.com/brandonetter/haxxServer/blob/master/tmp/html_test.php
