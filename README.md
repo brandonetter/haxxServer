@@ -15,3 +15,13 @@ Modify route.txt
 
 Navigate to \*/directory
 ![image](https://user-images.githubusercontent.com/4108484/113361017-fbec5600-9318-11eb-89cc-6403cc9b9ddc.png)
+
+
+
+## Markdown Interpreter
+haxxServer runs with a markdown to HTML interpreter, any route leading to a **_*.md_** file will be automagically converted to HTML when a peer connects
+
+![image](https://user-images.githubusercontent.com/4108484/113361378-ddd32580-9319-11eb-80bf-b8ed344e0023.png)
+
+![image](https://user-images.githubusercontent.com/4108484/113361421-f2172280-9319-11eb-876f-e675ca91abac.png)
+
