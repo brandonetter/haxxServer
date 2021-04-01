@@ -1,0 +1,601 @@
+<xml>
+<set name="HXCPP_API_LEVEL" value="400" />
+<files id="haxe">
+<compilerflag value="-Iinclude"/>
+  <file name="src/sys/thread/_Thread/HaxeThread.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/sys/thread/EventLoop.h"/>
+   <depend name="include/sys/thread/Mutex.h"/>
+   <depend name="include/sys/thread/_Thread/HaxeThread.h"/>
+  </file>
+  <file name="src/sys/thread/_Thread/Thread_Impl_.cpp" >
+   <depend name="include/sys/thread/EventLoop.h"/>
+   <depend name="include/sys/thread/_Thread/HaxeThread.h"/>
+   <depend name="include/sys/thread/_Thread/Thread_Impl_.h"/>
+  </file>
+  <file name="src/sys/thread/Mutex.cpp" >
+   <depend name="include/sys/thread/Mutex.h"/>
+  </file>
+  <file name="src/sys/thread/Lock.cpp" >
+   <depend name="include/sys/thread/Lock.h"/>
+  </file>
+  <file name="src/sys/thread/_EventLoop/RegularEvent.cpp" >
+   <depend name="include/sys/thread/_EventLoop/RegularEvent.h"/>
+  </file>
+  <file name="src/sys/thread/EventLoop.cpp" >
+   <depend name="include/Sys.h"/>
+   <depend name="include/sys/thread/EventLoop.h"/>
+   <depend name="include/sys/thread/Lock.h"/>
+   <depend name="include/sys/thread/Mutex.h"/>
+   <depend name="include/sys/thread/_EventLoop/RegularEvent.h"/>
+  </file>
+  <file name="src/sys/net/Socket.cpp" >
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Type.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Encoding.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/net/Host.h"/>
+   <depend name="include/sys/net/Socket.h"/>
+   <depend name="include/sys/net/_Socket/SocketInput.h"/>
+   <depend name="include/sys/net/_Socket/SocketOutput.h"/>
+  </file>
+  <file name="src/sys/net/_Socket/SocketOutput.cpp" >
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/net/_Socket/SocketOutput.h"/>
+  </file>
+  <file name="src/sys/net/_Socket/SocketInput.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/sys/net/_Socket/SocketInput.h"/>
+  </file>
+  <file name="src/sys/net/Host.cpp" >
+   <depend name="include/sys/net/Host.h"/>
+  </file>
+  <file name="src/sys/io/File.cpp" >
+   <depend name="include/sys/io/File.h"/>
+  </file>
+  <file name="src/sys/FileSystem.cpp" >
+   <depend name="include/haxe/io/Path.h"/>
+   <depend name="include/sys/FileSystem.h"/>
+  </file>
+  <file name="src/markdown/TagState.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/TagState.h"/>
+   <depend name="include/markdown/TagSyntax.h"/>
+  </file>
+  <file name="src/markdown/InlineParser.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/markdown/AutolinkSyntax.h"/>
+   <depend name="include/markdown/AutolinkSyntaxWithoutBrackets.h"/>
+   <depend name="include/markdown/CodeSyntax.h"/>
+   <depend name="include/markdown/ImgSyntax.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/LinkSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/TagState.h"/>
+   <depend name="include/markdown/TagSyntax.h"/>
+   <depend name="include/markdown/TextNode.h"/>
+   <depend name="include/markdown/TextSyntax.h"/>
+  </file>
+  <file name="src/markdown/CodeSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/markdown/CodeSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/ImgSyntax.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/Link.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/ImgSyntax.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/TagState.h"/>
+   <depend name="include/markdown/TagSyntax.h"/>
+   <depend name="include/markdown/TextNode.h"/>
+  </file>
+  <file name="src/markdown/LinkSyntax.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/Link.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/LinkSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/TagState.h"/>
+   <depend name="include/markdown/TagSyntax.h"/>
+   <depend name="include/markdown/TextNode.h"/>
+  </file>
+  <file name="src/markdown/TagSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/TagState.h"/>
+   <depend name="include/markdown/TagSyntax.h"/>
+  </file>
+  <file name="src/markdown/AutolinkSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/markdown/AutolinkSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/TextSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/TextNode.h"/>
+   <depend name="include/markdown/TextSyntax.h"/>
+  </file>
+  <file name="src/markdown/AutolinkSyntaxWithoutBrackets.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/markdown/AutolinkSyntaxWithoutBrackets.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/InlineSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+  </file>
+  <file name="src/markdown/HtmlRenderer.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/HtmlRenderer.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/NodeVisitor.h"/>
+   <depend name="include/markdown/TextNode.h"/>
+  </file>
+  <file name="src/markdown/TableSyntax.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/TableSyntax.h"/>
+  </file>
+  <file name="src/markdown/OrderedListSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/ListSyntax.h"/>
+   <depend name="include/markdown/OrderedListSyntax.h"/>
+  </file>
+  <file name="src/markdown/UnorderedListSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/ListSyntax.h"/>
+   <depend name="include/markdown/UnorderedListSyntax.h"/>
+  </file>
+  <file name="src/markdown/ListSyntax.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/ListItem.h"/>
+   <depend name="include/markdown/ListSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/ParagraphSyntax.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/ParagraphSyntax.h"/>
+  </file>
+  <file name="src/markdown/ListItem.cpp" >
+   <depend name="include/markdown/ListItem.h"/>
+  </file>
+  <file name="src/markdown/BlockHtmlSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/BlockHtmlSyntax.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/TextNode.h"/>
+  </file>
+  <file name="src/markdown/HorizontalRuleSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/HorizontalRuleSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/GitHubCodeBlockSyntax.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/GitHubCodeBlockSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/CodeBlockSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/CodeBlockSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/BlockquoteSyntax.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/BlockquoteSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/HeaderSyntax.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/HeaderSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/SetextHeaderSyntax.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/SetextHeaderSyntax.h"/>
+  </file>
+  <file name="src/markdown/EmptyBlockSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/EmptyBlockSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/markdown/BlockSyntax.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/BlockHtmlSyntax.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/BlockquoteSyntax.h"/>
+   <depend name="include/markdown/CodeBlockSyntax.h"/>
+   <depend name="include/markdown/EmptyBlockSyntax.h"/>
+   <depend name="include/markdown/GitHubCodeBlockSyntax.h"/>
+   <depend name="include/markdown/HeaderSyntax.h"/>
+   <depend name="include/markdown/HorizontalRuleSyntax.h"/>
+   <depend name="include/markdown/ListSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/OrderedListSyntax.h"/>
+   <depend name="include/markdown/ParagraphSyntax.h"/>
+   <depend name="include/markdown/SetextHeaderSyntax.h"/>
+   <depend name="include/markdown/TableSyntax.h"/>
+   <depend name="include/markdown/UnorderedListSyntax.h"/>
+  </file>
+  <file name="src/markdown/BlockParser.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+  </file>
+  <file name="src/markdown/TextNode.cpp" >
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/NodeVisitor.h"/>
+   <depend name="include/markdown/TextNode.h"/>
+  </file>
+  <file name="src/markdown/ElementNode.cpp" >
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/NodeVisitor.h"/>
+   <depend name="include/markdown/TextNode.h"/>
+  </file>
+  <file name="src/markdown/NodeVisitor.cpp" >
+   <depend name="include/markdown/ElementNode.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/NodeVisitor.h"/>
+   <depend name="include/markdown/TextNode.h"/>
+  </file>
+  <file name="src/markdown/Node.cpp" >
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/NodeVisitor.h"/>
+  </file>
+  <file name="src/haxe/iterators/ArrayIterator.cpp" >
+   <depend name="include/haxe/iterators/ArrayIterator.h"/>
+  </file>
+  <file name="src/haxe/io/Path.cpp" >
+   <depend name="include/haxe/io/Path.h"/>
+  </file>
+  <file name="src/haxe/io/Output.cpp" >
+   <depend name="include/haxe/io/Output.h"/>
+  </file>
+  <file name="src/haxe/io/Input.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/exceptions/NotImplementedException.h"/>
+   <depend name="include/haxe/exceptions/PosException.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+  </file>
+  <file name="src/haxe/io/Error.cpp" >
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/haxe/io/Eof.cpp" >
+   <depend name="include/haxe/io/Eof.h"/>
+  </file>
+  <file name="src/haxe/io/Encoding.cpp" >
+   <depend name="include/haxe/io/Encoding.h"/>
+  </file>
+  <file name="src/haxe/io/BytesBuffer.cpp" >
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+  </file>
+  <file name="src/haxe/io/Bytes.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Encoding.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+  </file>
+  <file name="src/haxe/exceptions/NotImplementedException.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/exceptions/NotImplementedException.h"/>
+   <depend name="include/haxe/exceptions/PosException.h"/>
+  </file>
+  <file name="src/haxe/exceptions/PosException.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/exceptions/PosException.h"/>
+  </file>
+  <file name="src/haxe/ds/StringMap.cpp" >
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/haxe/iterators/ArrayIterator.h"/>
+  </file>
+  <file name="src/haxe/ds/_List/ListNode.cpp" >
+   <depend name="include/haxe/ds/_List/ListNode.h"/>
+  </file>
+  <file name="src/haxe/ValueException.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/ValueException.h"/>
+  </file>
+  <file name="src/haxe/NativeStackTrace.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/NativeStackTrace.h"/>
+   <depend name="include/haxe/StackItem.h"/>
+  </file>
+  <file name="src/haxe/Exception.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/NativeStackTrace.h"/>
+   <depend name="include/haxe/ValueException.h"/>
+  </file>
+  <file name="src/haxe/IMap.cpp" >
+   <depend name="include/haxe/IMap.h"/>
+  </file>
+  <file name="src/haxe/_CallStack/CallStack_Impl_.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/haxe/NativeStackTrace.h"/>
+   <depend name="include/haxe/StackItem.h"/>
+   <depend name="include/haxe/_CallStack/CallStack_Impl_.h"/>
+  </file>
+  <file name="src/haxe/StackItem.cpp" >
+   <depend name="include/haxe/StackItem.h"/>
+  </file>
+  <file name="src/Type.cpp" >
+   <depend name="include/Type.h"/>
+  </file>
+  <file name="src/Sys.cpp" >
+   <depend name="include/StringTools.h"/>
+   <depend name="include/Sys.h"/>
+   <depend name="include/haxe/SysTools.h"/>
+  </file>
+  <file name="src/StringTools.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/StringTools.h"/>
+  </file>
+  <file name="src/haxe/SysTools.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/SysTools.h"/>
+  </file>
+  <file name="src/StringBuf.cpp" >
+   <depend name="include/StringBuf.h"/>
+  </file>
+  <file name="src/Std.cpp" >
+   <depend name="include/Std.h"/>
+  </file>
+  <file name="src/Reflect.cpp" >
+   <depend name="include/Reflect.h"/>
+  </file>
+  <file name="src/Link.cpp" >
+   <depend name="include/Link.h"/>
+  </file>
+  <file name="src/Document.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/Link.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/markdown/BlockParser.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/InlineSyntax.h"/>
+   <depend name="include/markdown/Node.h"/>
+  </file>
+  <file name="src/Markdown.cpp" >
+   <depend name="include/Document.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/Markdown.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/Sys.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/StackItem.h"/>
+   <depend name="include/haxe/_CallStack/CallStack_Impl_.h"/>
+   <depend name="include/haxe/io/Path.h"/>
+   <depend name="include/markdown/HtmlRenderer.h"/>
+   <depend name="include/markdown/Node.h"/>
+   <depend name="include/markdown/NodeVisitor.h"/>
+   <depend name="include/sys/FileSystem.h"/>
+   <depend name="include/sys/io/File.h"/>
+  </file>
+  <file name="src/Page.cpp" >
+   <depend name="include/Page.h"/>
+  </file>
+  <file name="src/PageRoute.cpp" >
+   <depend name="include/PageRoute.h"/>
+  </file>
+  <file name="src/Main.cpp" >
+   <depend name="include/Date.h"/>
+   <depend name="include/DateTools.h"/>
+   <depend name="include/EReg.h"/>
+   <depend name="include/Main.h"/>
+   <depend name="include/Markdown.h"/>
+   <depend name="include/Page.h"/>
+   <depend name="include/PageRoute.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/Sys.h"/>
+   <depend name="include/haxe/ds/List.h"/>
+   <depend name="include/haxe/ds/_List/ListNode.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/sys/io/File.h"/>
+   <depend name="include/sys/net/Host.h"/>
+   <depend name="include/sys/net/Socket.h"/>
+   <depend name="include/sys/thread/_Thread/HaxeThread.h"/>
+  </file>
+  <file name="src/haxe/ds/List.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/haxe/ds/List.h"/>
+   <depend name="include/haxe/ds/_List/ListNode.h"/>
+  </file>
+  <file name="src/EReg.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/haxe/Exception.h"/>
+  </file>
+  <file name="src/DateTools.cpp" >
+   <depend name="include/Date.h"/>
+   <depend name="include/DateTools.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/exceptions/NotImplementedException.h"/>
+   <depend name="include/haxe/exceptions/PosException.h"/>
+  </file>
+  <file name="src/Date.cpp" >
+   <depend name="include/Date.h"/>
+  </file>
+  <file name="src/__boot__.cpp" >
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Encoding.h"/>
+   <depend name="include/haxe/StackItem.h"/>
+   <depend name="include/sys/thread/_Thread/HaxeThread.h"/>
+   <depend name="include/sys/net/Host.h"/>
+   <depend name="include/markdown/InlineParser.h"/>
+   <depend name="include/markdown/ImgSyntax.h"/>
+   <depend name="include/markdown/LinkSyntax.h"/>
+   <depend name="include/markdown/HtmlRenderer.h"/>
+   <depend name="include/markdown/TableSyntax.h"/>
+   <depend name="include/markdown/BlockSyntax.h"/>
+   <depend name="include/haxe/SysTools.h"/>
+   <depend name="include/Main.h"/>
+   <depend name="include/DateTools.h"/>
+  </file>
+  <file name="src/__files__.cpp" if='HXCPP_DEBUGGER'>
+  </file>
+   <file name="${HXCPP}/src/hx/NoFiles.cpp" unless="HXCPP_DEBUGGER" />
+  <file name="src/__resources__.cpp" >
+  </file>
+</files>
+<files id="__lib__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__lib__.cpp" >
+   <depend name="include/Main.h"/>
+   <depend name="include/sys/thread/_Thread/Thread_Impl_.h"/>
+  </file>
+</files>
+<files id="__main__">
+<compilerflag value="-Iinclude"/>
+  <file name="src/__main__.cpp" >
+   <depend name="include/Main.h"/>
+   <depend name="include/sys/thread/_Thread/Thread_Impl_.h"/>
+  </file>
+</files>
+<files id="__resources__">
+</files>
+<files id="__externs__">
+</files>
+<set name="HAXE_OUTPUT" value="Main" />
+<include name="${HXCPP}/build-tool/BuildCommon.xml"/>
+<include name="${HXCPP}/src/hx/libs/regexp/Build.xml"/>
+<include name="${HXCPP}/src/hx/libs/std/Build.xml"/>
+<include name="${HXCPP}/src/hx/libs/std/Build.xml"/>
+<include name="${HXCPP}/src/hx/libs/std/Build.xml"/>
+<include name="${HXCPP}/src/hx/libs/std/Build.xml"/>
+<error value="Hxcpp is out of date - please update" unlessApi="400" />
+</xml>
