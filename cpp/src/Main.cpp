@@ -54,9 +54,9 @@ HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_24_main,"Main","main",0xed0e206e,"
 HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_16_main,"Main","main",0xed0e206e,"Main.main","Main.hx",16,0x087e5c05)
 HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_41_main,"Main","main",0xed0e206e,"Main.main","Main.hx",41,0x087e5c05)
 HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_79_page,"Main","page",0xef09c284,"Main.page","Main.hx",79,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_87_page,"Main","page",0xef09c284,"Main.page","Main.hx",87,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_125_fileResolve,"Main","fileResolve",0xf9a12c3b,"Main.fileResolve","Main.hx",125,0x087e5c05)
-HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_155_updateRoute,"Main","updateRoute",0xd2051f2b,"Main.updateRoute","Main.hx",155,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_88_page,"Main","page",0xef09c284,"Main.page","Main.hx",88,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_127_fileResolve,"Main","fileResolve",0xf9a12c3b,"Main.fileResolve","Main.hx",127,0x087e5c05)
+HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_157_updateRoute,"Main","updateRoute",0xd2051f2b,"Main.updateRoute","Main.hx",157,0x087e5c05)
 HX_LOCAL_STACK_FRAME(_hx_pos_e47a9afac0942eb9_9_boot,"Main","boot",0xe5d36c67,"Main.boot","Main.hx",9,0x087e5c05)
 
 void Main_obj::__construct() { }
@@ -96,7 +96,7 @@ HXLINE(  33)				::Sys_obj::sleep(((Float)5.5));
 
             	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_16_main)
 HXLINE(  17)		 ::sys::net::Socket s =  ::sys::net::Socket_obj::__alloc( HX_CTX );
-HXLINE(  19)		s->bind( ::sys::net::Host_obj::__alloc( HX_CTX ,HX_("localhost",53,2a,7c,1c)),8000);
+HXLINE(  19)		s->bind( ::sys::net::Host_obj::__alloc( HX_CTX ,HX_("localhost",53,2a,7c,1c)),80);
 HXLINE(  20)		s->listen(1);
 HXLINE(  23)		::sys::thread::_Thread::HaxeThread_obj::create( ::Dynamic(new _hx_Closure_0()),false);
 HXLINE(  37)		while(true){
@@ -132,87 +132,87 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC0(Main_obj,main,(void))
 HXLINE(  80)		::String data = HX_("If you see this call the cops",0f,bc,a7,54);
 HXLINE(  81)		::String pdata = HX_("o",6f,00,00,00);
 HXLINE(  82)		 ::Page p =  ::Page_obj::__alloc( HX_CTX );
-HXLINE(  83)		if ((pageName.split(HX_(".",2e,00,00,00))->__get(1) == HX_("php",78,57,55,00))) {
+HXLINE(  84)		if ((pageName.split(HX_(".",2e,00,00,00))->__get(1) == HX_("php",78,57,55,00))) {
             			HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0,::String,pageName) HXARGC(0)
             			void _hx_run(){
-            				HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_87_page)
-HXLINE(  87)				::Sys_obj::command(((((HX_("php -f ",bf,c5,ab,58) + pageName) + HX_("> /tmp/html_",af,34,8a,70)) + pageName) + HX_(" | grep 0",2a,30,d3,5a)),null());
+            				HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_88_page)
+HXLINE(  88)				::Sys_obj::command(((((HX_("php -f ",bf,c5,ab,58) + pageName) + HX_("> ./tmp/html_",d9,9e,e3,ac)) + pageName) + HX_(" | grep 0",2a,30,d3,5a)),null());
             			}
             			HX_END_LOCAL_FUNC0((void))
 
-HXLINE(  86)			::sys::thread::_Thread::HaxeThread_obj::create( ::Dynamic(new _hx_Closure_0(pageName)),false);
-HXLINE(  90)			pdata = ::sys::io::File_obj::getContent((HX_("/tmp/html_",0d,40,60,68) + pageName));
+HXLINE(  87)			::sys::thread::_Thread::HaxeThread_obj::create( ::Dynamic(new _hx_Closure_0(pageName)),false);
+HXLINE(  91)			pdata = ::sys::io::File_obj::getContent((HX_("./tmp/html_",bb,85,57,90) + pageName));
             		}
-HXLINE(  95)		::String data1 = ::sys::io::File_obj::getContent(pageName);
-HXLINE(  96)		int length = 0;
-HXLINE(  97)		if ((pageName.split(HX_(".",2e,00,00,00))->__get(1) == HX_("php",78,57,55,00))) {
-HXLINE(  98)			data1 = pdata;
-HXLINE(  99)			length = (length + 1);
-HXLINE( 100)			p->timeAdd = ((Float)0.1);
+HXLINE(  96)		::String data1 = ::sys::io::File_obj::getContent(pageName);
+HXLINE(  97)		int length = 0;
+HXLINE(  98)		if ((pageName.split(HX_(".",2e,00,00,00))->__get(1) == HX_("php",78,57,55,00))) {
+HXLINE(  99)			data1 = pdata;
+HXLINE( 100)			length = (length + 1);
+HXLINE( 101)			p->timeAdd = ((Float)0.1);
             		}
             		else {
-HXLINE( 102)			data1 = ::StringTools_obj::replace(data1,HX_("{{time}}",4d,fa,de,94),::DateTools_obj::format(::Date_obj::now(),HX_("%Y-%m-%d_%H:%M:%S",5d,a1,9d,6e)));
+HXLINE( 103)			data1 = ::StringTools_obj::replace(data1,HX_("{{time}}",4d,fa,de,94),::DateTools_obj::format(::Date_obj::now(),HX_("%Y-%m-%d_%H:%M:%S",5d,a1,9d,6e)));
             		}
-HXLINE( 104)		length = (length + data1.length);
-HXLINE( 107)		p->data = data1;
-HXLINE( 108)		p->length = length;
-HXLINE( 109)		if ((pageName.split(HX_(".",2e,00,00,00))->__get(1) == HX_("md",57,5f,00,00))) {
-HXLINE( 110)			p->data = ::Markdown_obj::markdownToHtml(p->data);
+HXLINE( 105)		length = (length + data1.length);
+HXLINE( 109)		p->data = data1;
+HXLINE( 110)		p->length = length;
+HXLINE( 111)		if ((pageName.split(HX_(".",2e,00,00,00))->__get(1) == HX_("md",57,5f,00,00))) {
+HXLINE( 112)			p->data = ::Markdown_obj::markdownToHtml(p->data);
             		}
-HXLINE( 112)		return p;
+HXLINE( 114)		return p;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Main_obj,page,return )
 
 ::String Main_obj::fileResolve(::String req){
-            	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_125_fileResolve)
-HXLINE( 128)		::String fileName = HX_("notfound.txt",d1,76,e2,ca);
-HXLINE( 129)		 ::haxe::ds::_List::ListNode RouteIt_head = ::Main_obj::RouteList->h;
-HXLINE( 130)		{
-HXLINE( 130)			int _g = 0;
-HXDLIN( 130)			int _g1 = ::Main_obj::RouteList->length;
-HXDLIN( 130)			while((_g < _g1)){
-HXLINE( 130)				_g = (_g + 1);
-HXDLIN( 130)				int i = (_g - 1);
-HXLINE( 131)				 ::PageRoute val = ( ( ::PageRoute)(RouteIt_head->item) );
-HXDLIN( 131)				RouteIt_head = RouteIt_head->next;
-HXDLIN( 131)				 ::PageRoute pr = val;
-HXLINE( 132)				::String pr_r = pr->request;
-HXLINE( 133)				::String pr_o = pr->output;
-HXLINE( 134)				 ::EReg regexp =  ::EReg_obj::__alloc( HX_CTX ,(HX_("GET /",05,c2,4e,0f) + pr_r),HX_("i",69,00,00,00));
-HXLINE( 135)				if (regexp->match(req)) {
-HXLINE( 137)					fileName = pr_o;
+            	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_127_fileResolve)
+HXLINE( 130)		::String fileName = HX_("notfound.txt",d1,76,e2,ca);
+HXLINE( 131)		 ::haxe::ds::_List::ListNode RouteIt_head = ::Main_obj::RouteList->h;
+HXLINE( 132)		{
+HXLINE( 132)			int _g = 0;
+HXDLIN( 132)			int _g1 = ::Main_obj::RouteList->length;
+HXDLIN( 132)			while((_g < _g1)){
+HXLINE( 132)				_g = (_g + 1);
+HXDLIN( 132)				int i = (_g - 1);
+HXLINE( 133)				 ::PageRoute val = ( ( ::PageRoute)(RouteIt_head->item) );
+HXDLIN( 133)				RouteIt_head = RouteIt_head->next;
+HXDLIN( 133)				 ::PageRoute pr = val;
+HXLINE( 134)				::String pr_r = pr->request;
+HXLINE( 135)				::String pr_o = pr->output;
+HXLINE( 136)				 ::EReg regexp =  ::EReg_obj::__alloc( HX_CTX ,(HX_("GET /",05,c2,4e,0f) + pr_r),HX_("i",69,00,00,00));
+HXLINE( 137)				if (regexp->match(req)) {
+HXLINE( 139)					fileName = pr_o;
             				}
             			}
             		}
-HXLINE( 140)		return fileName;
+HXLINE( 142)		return fileName;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(Main_obj,fileResolve,return )
 
  ::haxe::ds::List Main_obj::updateRoute(){
-            	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_155_updateRoute)
-HXLINE( 156)		::String data = ::sys::io::File_obj::getContent(HX_("route.txt",0b,35,4e,65));
-HXLINE( 157)		 ::EReg r =  ::EReg_obj::__alloc( HX_CTX ,HX_("\n",0a,00,00,00),HX_("g",67,00,00,00));
-HXLINE( 158)		data = r->replace(data,HX_("",00,00,00,00));
-HXLINE( 159)		::Array< ::String > dataList = data.split(HX_(";",3b,00,00,00));
-HXLINE( 160)		 ::haxe::ds::List RouteList =  ::haxe::ds::List_obj::__alloc( HX_CTX );
-HXLINE( 161)		{
-HXLINE( 161)			int _g = 0;
-HXDLIN( 161)			int _g1 = (dataList->length - 1);
-HXDLIN( 161)			while((_g < _g1)){
-HXLINE( 161)				_g = (_g + 1);
-HXDLIN( 161)				int i = (_g - 1);
-HXLINE( 162)				::Array< ::String > route = dataList->__get(i).split(HX_("=>",61,35,00,00));
-HXLINE( 163)				 ::PageRoute pageRoute =  ::PageRoute_obj::__alloc( HX_CTX );
-HXLINE( 164)				pageRoute->request = route->__get(0);
-HXLINE( 165)				pageRoute->output = route->__get(1);
-HXLINE( 166)				RouteList->push(pageRoute);
+            	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_157_updateRoute)
+HXLINE( 158)		::String data = ::sys::io::File_obj::getContent(HX_("route.txt",0b,35,4e,65));
+HXLINE( 159)		 ::EReg r =  ::EReg_obj::__alloc( HX_CTX ,HX_("\n",0a,00,00,00),HX_("g",67,00,00,00));
+HXLINE( 160)		data = r->replace(data,HX_("",00,00,00,00));
+HXLINE( 161)		::Array< ::String > dataList = data.split(HX_(";",3b,00,00,00));
+HXLINE( 162)		 ::haxe::ds::List RouteList =  ::haxe::ds::List_obj::__alloc( HX_CTX );
+HXLINE( 163)		{
+HXLINE( 163)			int _g = 0;
+HXDLIN( 163)			int _g1 = (dataList->length - 1);
+HXDLIN( 163)			while((_g < _g1)){
+HXLINE( 163)				_g = (_g + 1);
+HXDLIN( 163)				int i = (_g - 1);
+HXLINE( 164)				::Array< ::String > route = dataList->__get(i).split(HX_("=>",61,35,00,00));
+HXLINE( 165)				 ::PageRoute pageRoute =  ::PageRoute_obj::__alloc( HX_CTX );
+HXLINE( 166)				pageRoute->request = route->__get(0);
+HXLINE( 167)				pageRoute->output = route->__get(1);
+HXLINE( 168)				RouteList->push(pageRoute);
             			}
             		}
-HXLINE( 169)		return RouteList;
+HXLINE( 171)		return RouteList;
             	}
 
 

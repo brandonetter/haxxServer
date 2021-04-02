@@ -5,10 +5,10 @@
 #include <PageRoute.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_a8baca733c8f577d_176_new,"PageRoute","new",0x73aaaa8c,"PageRoute.new","Main.hx",176,0x087e5c05)
+HX_DEFINE_STACK_FRAME(_hx_pos_a8baca733c8f577d_178_new,"PageRoute","new",0x73aaaa8c,"PageRoute.new","Main.hx",178,0x087e5c05)
 
 void PageRoute_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_a8baca733c8f577d_176_new)
+            	HX_STACKFRAME(&_hx_pos_a8baca733c8f577d_178_new)
             	}
 
 Dynamic PageRoute_obj::__CreateEmpty() { return new PageRoute_obj; }

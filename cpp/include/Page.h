@@ -6,7 +6,7 @@
 #include <hxcpp.h>
 #endif
 
-HX_DECLARE_STACK_FRAME(_hx_pos_16ea658f277e41b6_189_new)
+HX_DECLARE_STACK_FRAME(_hx_pos_16ea658f277e41b6_191_new)
 HX_DECLARE_CLASS0(Page)
 
 
@@ -37,8 +37,8 @@ class HXCPP_CLASS_ATTRIBUTES Page_obj : public ::hx::Object
 			Page_obj *__this = (Page_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(Page_obj), true, "Page"));
 			*(void **)__this = Page_obj::_hx_vtable;
 {
-            	HX_STACKFRAME(&_hx_pos_16ea658f277e41b6_189_new)
-HXDLIN( 189)		( ( ::Page)(__this) )->timeAdd = ((Float)0);
+            	HX_STACKFRAME(&_hx_pos_16ea658f277e41b6_191_new)
+HXDLIN( 191)		( ( ::Page)(__this) )->timeAdd = ((Float)0);
             	}
 		
 			return __this;

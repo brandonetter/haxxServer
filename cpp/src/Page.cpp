@@ -5,11 +5,11 @@
 #include <Page.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_16ea658f277e41b6_189_new,"Page","new",0x165c0ae1,"Page.new","Main.hx",189,0x087e5c05)
+HX_DEFINE_STACK_FRAME(_hx_pos_16ea658f277e41b6_191_new,"Page","new",0x165c0ae1,"Page.new","Main.hx",191,0x087e5c05)
 
 void Page_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_16ea658f277e41b6_189_new)
-HXDLIN( 189)		this->timeAdd = ((Float)0);
+            	HX_STACKFRAME(&_hx_pos_16ea658f277e41b6_191_new)
+HXDLIN( 191)		this->timeAdd = ((Float)0);
             	}
 
 Dynamic Page_obj::__CreateEmpty() { return new Page_obj; }

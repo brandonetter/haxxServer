@@ -1,17 +1,9 @@
 index=>index.html;
 index.html=>index.html;
 index.php=>index.html;
-happy=>file.html;
-noway/that=>index.html;
 test=>test.html;
-test.html=>test.html;
-tester.html=>test.html;
-test.html=>test.html;
-tes.html=>test.html;
-tes.html=>test.html;
 markdown=>markdown.md;
 markdown.html=>markdown.md;
-nikki/test=>markdown.md;
-nikki=>test.html;
 phptest=>test.php;
+directory=>file.html;
 

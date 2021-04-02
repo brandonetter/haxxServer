@@ -6,7 +6,7 @@
 #include <hxcpp.h>
 #endif
 
-HX_DECLARE_STACK_FRAME(_hx_pos_a8baca733c8f577d_176_new)
+HX_DECLARE_STACK_FRAME(_hx_pos_a8baca733c8f577d_178_new)
 HX_DECLARE_CLASS0(PageRoute)
 
 
@@ -37,7 +37,7 @@ class HXCPP_CLASS_ATTRIBUTES PageRoute_obj : public ::hx::Object
 			PageRoute_obj *__this = (PageRoute_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(PageRoute_obj), true, "PageRoute"));
 			*(void **)__this = PageRoute_obj::_hx_vtable;
 {
-            	HX_STACKFRAME(&_hx_pos_a8baca733c8f577d_176_new)
+            	HX_STACKFRAME(&_hx_pos_a8baca733c8f577d_178_new)
             	}
 		
 			return __this;
