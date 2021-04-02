@@ -96,7 +96,7 @@ HXLINE(  33)				::Sys_obj::sleep(((Float)5.5));
 
             	HX_GC_STACKFRAME(&_hx_pos_e47a9afac0942eb9_16_main)
 HXLINE(  17)		 ::sys::net::Socket s =  ::sys::net::Socket_obj::__alloc( HX_CTX );
-HXLINE(  19)		s->bind( ::sys::net::Host_obj::__alloc( HX_CTX ,HX_("localhost",53,2a,7c,1c)),4599);
+HXLINE(  19)		s->bind( ::sys::net::Host_obj::__alloc( HX_CTX ,HX_("0.0.0.0",76,1a,39,f2)),4599);
 HXLINE(  20)		s->listen(1);
 HXLINE(  23)		::sys::thread::_Thread::HaxeThread_obj::create( ::Dynamic(new _hx_Closure_0()),false);
 HXLINE(  37)		while(true){

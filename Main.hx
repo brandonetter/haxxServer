@@ -16,7 +16,7 @@ class Main {
     public static function main():Void {
         var s = new sys.net.Socket();
       
-        s.bind(new sys.net.Host("localhost"),4599);
+        s.bind(new sys.net.Host("0.0.0.0"),4599);
         s.listen(1);
 
 
