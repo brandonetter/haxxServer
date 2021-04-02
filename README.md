@@ -1,6 +1,17 @@
 # haxxServer
 HTTP Server written in HAXE
 
+### Features
+Non-traversal routing with a simple and programming-free syntax ( page=>page.html )
+
+Markdown interpreter built in, just route to an .md file ( page=>page.md )
+
+Smol boi (2.3mb binary)
+
+
+
+
+
 ## Linux Binaries
 Located in cpp/Main
 
